@@ -54,4 +54,4 @@ jobs:
           curl https://secretmanager.googleapis.com/v1/projects/${{ secrets.PROJECT_ID }}/secrets/my-secret/versions/1:access \
             --header "Authorization: Bearer ${{ steps.access_token.outputs.access_token }}"
           echo "Done!!!"    
-          
+        
